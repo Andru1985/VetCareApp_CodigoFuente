@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollPerfil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgVeterinario"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="Foto del médico veterinario"
+            android:src="@drawable/ic_vet_placeholder" />
+
+        <TextView
+            android:id="@+id/tvNombreVeterinario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_horizontal"
+            android:text="Dr. Carlos Mendoza"
+            android:textColor="#1A2744"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvEspecialidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Especialista en Medicina Canina y Felina"
+            android:textColor="#2E7D6B" />
+
+        <TextView
+            android:id="@+id/tvEstudios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Estudios:\nMédico Veterinario Zootecnista, Universidad Nacional.\nEspecialización en Cirugía de Pequeñas Especies." />
+
+        <TextView
+            android:id="@+id/tvExperiencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Experiencia:\nMás de 10 años de trayectoria clínica, atención de urgencias y procedimientos quirúrgicos en caninos y felinos. Docente invitado en jornadas de bienestar animal." />
+
+    </LinearLayout>
+</ScrollView>

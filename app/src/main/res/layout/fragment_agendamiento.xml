@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agendar Cita Médica"
+            android:textStyle="bold"
+            android:textColor="#1A2744"
+            android:textSize="16sp"
+            android:paddingBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvDoctorSeleccionado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EAF4F1"
+            android:padding="10dp"
+            android:text="Doctor Seleccionado: Dr. Carlos Mendoza (Especialista Canino)" />
+
+        <EditText
+            android:id="@+id/etNombreMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Nombre Mascota (ej. Lucas - Perro)" />
+
+        <EditText
+            android:id="@+id/etFechaCita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Fecha Cita (dd/mm/aaaa)"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/etHoraCita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Hora Cita (hh:mm AM/PM)"
+            android:inputType="time" />
+
+        <EditText
+            android:id="@+id/etMotivoCita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Motivo (ej. Control General y Vacunación)" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnConfirmarCita"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#2E7D32"
+                android:text="CONFIRMAR CITA"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnCancelarCita"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#C62828"
+                android:text="CANCELAR"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvMensajeAgendamiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+</ScrollView>
